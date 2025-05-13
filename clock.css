@@ -11,6 +11,8 @@
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.5s ease;
+  display: flex;
+  flex-direction: column;
 }
 
 .clock-container.show {
@@ -19,12 +21,25 @@
 }
 
 .clock {
+  font-weight: 900;
   font-family: 'Courier New', monospace;
   font-size: 15vw;
   color: #00ff00;
   text-shadow: 0 0 20px #00ff00;
   padding: 2vw 4vw;
-  border: 3px solid #00ff00;
+  border: 30px solid #00ff00;
   border-radius: 15px;
   background: rgba(0, 0, 0, 0.8);
+  margin-top: 30px;
+}
+
+#logo {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#if {
+  width: 250px;
+  height: 100px;
 }

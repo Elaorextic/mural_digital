@@ -23,9 +23,9 @@ $(document).ready(function() {
       } else {
         clearInterval(slideTimer);
         // Após o último slide, espera 1 minuto e mostra o relógio
-        setTimeout(showClock, 30000);
+        setTimeout(showClock, 1);
       }
-    }, 30000);
+    }, 1);
   }
 
   function showClock() {
