@@ -23,9 +23,9 @@ $(document).ready(function() {
       } else {
         clearInterval(slideTimer);
         // Após o último slide, espera 1 minuto e mostra o relógio
-        setTimeout(showClock, 1);
+        setTimeout(showClock, 1); // Esse 1 e para ultima imagem que recebe 2 countdown
       }
-    }, 1);
+    }, 10000);
   }
 
   function showClock() {
@@ -36,7 +36,7 @@ $(document).ready(function() {
       clockContainer.removeClass('show');
       carousel.show();
       startSlidesCycle();
-    }, 60000); // 5 minutos
+    }, 30000); // 5 minutos
   }
 
   // Inicializa o carousel sem auto-slide
